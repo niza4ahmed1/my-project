@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Online Voting System</h1>
+
+    <form id="voteForm">
+        <label>Voter Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label>Voter ID</label>
+        <input type="text" id="voterId" placeholder="Enter Voter ID">
+
+        <label>Select Candidate</label>
+        <div class="radio-group">
+            <input type="radio" name="candidate" value="Candidate A"> Candidate A <br>
+            <input type="radio" name="candidate" value="Candidate B"> Candidate B <br>
+            <input type="radio" name="candidate" value="Candidate C"> Candidate C
+        </div>
+
+        <button type="submit">Cast Vote</button>
+    </form>
+
+    <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
